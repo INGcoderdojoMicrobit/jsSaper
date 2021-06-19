@@ -1,4 +1,7 @@
 // ඞ
+// CoderDojo, zajęcia 19.06 i 12.06
+// najpierw w VisualStudio Code, potem gra w Arcade
+// https://github.com/INGcoderdojoMicrobit/jsSaper
 
 
 let m = 0
@@ -307,6 +310,7 @@ function CheckField(y: number, x: number)
             music.bigCrash.play()
             ValidateMap()
             tiles.setTileAt(tiles.getTileLocation(x, y),assets.tile`sExploded`)
+            scene.cameraShake(10,1000)
             basic.pause(5500)
             game.over(false)
                 
